@@ -142,7 +142,7 @@ mafft  --auto --inputorder rbsc_aa.fasta > rbsc_aa_aligned.fasta
 <details>
 <summary> Alignment </summary>
 
-![Semantic description of image](asr_tutorial/figures/alignment.png "Image Title")
+![Semantic description of image](figures/alignment.png "Image Title")
 
 </details>
 
@@ -190,7 +190,7 @@ The tree is unrooted. We can root the tree by selecting the branch including Gro
 <details>
 <summary> Tree </summary>
 
-![Semantic description of image](asr_tutorial/figures/rbsc_tree.png "Image Title")
+![Semantic description of image](figures/rbsc_tree.png "Image Title")
 
 </details>
 > Are the rubisco sequences monophyletic based on groups?
@@ -218,7 +218,7 @@ _rbsc_aa_aligned.asr.tre_ - tree file with the numbers of ancestral nodes
 <details>
 <summary> ASR Tree </summary>
 
-![Semantic description of image](asr_tutorial/figures/rbsc_asrtree.png "Image Title")
+![Semantic description of image](figures/rbsc_asrtree.png "Image Title")
 
 </details>
 

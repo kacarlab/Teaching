@@ -9,7 +9,7 @@ from optparse import OptionParser, OptionGroup
 VERSION = "asr v1.0"
 
 # set default executables and model #
-PAMLBS = "/Users/fer/Desktop/asr_tutorial/paml4.9j" #change the path
+PAMLBS = "/Users/name/desktop/asr/paml4.9j" #change the path
 CODEML = PAMLBS + "/bin/codeml"
 BASEML = PAMLBS + "/bin/baseml"
 SUBMOD_NAME = PAMLBS + "/dat/lg.dat"
