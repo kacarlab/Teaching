@@ -78,7 +78,8 @@ cd ..       # go back under asr folder
 7. Download _paml_asr.py_ . This python script is going to be used to infer insertions-deletions in ancestral sequences. 
 
 ```
-wget https://github.com/kacarlab/Teaching/blob/ff3f19076ecf0c10f198f2afa2ddcbac9b623146/asr_tutorial/paml_asr.py
+wget https://github.com/kacarlab/Teaching/blob/f924de680e3cbc4670f3aa5012d425c2dc331bcb/asr_tutorial/paml_asr.py
+
 pwd     # look at the current path you are in and copy it
 # the path look like similar to this
 /User/name/desktop/asr
@@ -193,6 +194,7 @@ The tree is unrooted. We can root the tree by selecting the branch including Gro
 ![Semantic description of image](figures/rbsc_tree.png "Image Title")
 
 </details>
+
 > Are the rubisco sequences monophyletic based on groups?
 
 
