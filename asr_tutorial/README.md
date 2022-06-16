@@ -78,7 +78,7 @@ cd ..       # go back under asr folder
 7. Download _paml_asr.py_ . This python script is going to be used to infer insertions-deletions in ancestral sequences. 
 
 ```
-wget https://github.com/evrimfer/asr_tutorial/blob/39830372a7c6c89713ef944f1fe4aeb38551ef62/paml_asr.py
+wget https://github.com/kacarlab/Teaching/blob/ff3f19076ecf0c10f198f2afa2ddcbac9b623146/asr_tutorial/paml_asr.py
 pwd     # look at the current path you are in and copy it
 # the path look like similar to this
 /User/name/desktop/asr
@@ -112,7 +112,7 @@ pwd
 /User/name/desktop/asr  
 
 # download the data under "asr" folder
-wget https://github.com/evrimfer/asr_tutorial/blob/65f81b875123a8d7fd31cbe0ae25b59021fffd98/rbsc_aa.fasta
+wget https://github.com/kacarlab/Teaching/blob/ff3f19076ecf0c10f198f2afa2ddcbac9b623146/asr_tutorial/rbsc_aa.fasta
 ```
 
 ## **3. Multiple Sequence Alignment**
@@ -142,7 +142,7 @@ mafft  --auto --inputorder rbsc_aa.fasta > rbsc_aa_aligned.fasta
 <details>
 <summary> Alignment </summary>
 
-![Semantic description of image](alignment.png "Image Title")
+![Semantic description of image](asr_tutorial/figures/alignment.png "Image Title")
 
 </details>
 
@@ -190,7 +190,7 @@ The tree is unrooted. We can root the tree by selecting the branch including Gro
 <details>
 <summary> Tree </summary>
 
-![Semantic description of image](rbsc_tree.png "Image Title")
+![Semantic description of image](asr_tutorial/figures/rbsc_tree.png "Image Title")
 
 </details>
 > Are the rubisco sequences monophyletic based on groups?
@@ -218,7 +218,7 @@ _rbsc_aa_aligned.asr.tre_ - tree file with the numbers of ancestral nodes
 <details>
 <summary> ASR Tree </summary>
 
-![Semantic description of image](rbsc_asrtree.png "Image Title")
+![Semantic description of image](asr_tutorial/figures/rbsc_asrtree.png "Image Title")
 
 </details>
 
