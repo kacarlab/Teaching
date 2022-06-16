@@ -1,0 +1,239 @@
+IQ-TREE multicore version 2.0.3 for Mac OS X 64-bit built Dec 19 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    evrimfer.local (AVX2, FMA3, 8 GB RAM)
+Command: iqtree -s rbsc_aa_aligned.fasta -m MFP -msub nuclear -st AA -alrt 1000 -B 1000 -T AUTO
+Seed:    789475 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Jun 16 00:07:54 2022
+Kernel:  AVX+FMA - auto-detect threads (4 CPU cores detected)
+
+Reading alignment file rbsc_aa_aligned.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 51 sequences with 250 columns, 247 distinct patterns
+168 parsimony-informative, 59 singleton sites, 23 constant sites
+                                               Gap/Ambiguity  Composition  p-value
+   1  A1_Allochromatium_GammaP                        52.40%    failed      0.00%
+   2  A1_Thiomicrospira_GammaP_HydrothermalSulfurOx   53.60%    passed     95.80%
+   3  A2_Allochromatium_GammaP                        54.80%    passed     50.98%
+   4  A2_Thiomicrospira_GammaP_HydrothermalSulfurOx   54.40%    passed     98.34%
+   5  A_Acidithiobacillus_GammaP                      52.80%    passed     98.68%
+   6  A_Alkalilimnicola_GammaP                        52.80%    passed     98.77%
+   7  A_Cupriavidus_BetaP                             52.80%    passed     77.41%
+   8  A_Halorhodospira_GammaP                         52.40%    passed     88.26%
+   9  A_Hydrogenophilus_BetaP_Thermophillic           50.40%    passed     81.63%
+  10  A_Methylococcus_GammaP_Methanotrophic           52.80%    passed     99.28%
+  11  A_Nitrobacter_AlphaP                            43.60%    passed     99.06%
+  12  A_Nitrosomonas_BetaP                            52.80%    passed     99.59%
+  13  A_Prochlorococcus_Cyanob                        54.80%    passed     53.55%
+  14  A_Synechococcus_Cyanob                          54.80%    passed     75.49%
+  15  ACDII_Rhodopse_AlphaP_purple_Nonsulfur          44.00%    passed     80.14%
+  16  AII_Hydrogenovibr_GammaP_HydrogenOxidizing      53.20%    passed     97.05%
+  17  AII_Rhodobacter_AlphaP                          52.80%    passed     99.56%
+  18  AII_Thiobacillus_BetaP                          52.80%    passed     97.85%
+  19  B_Anabaena_Cyanob                               56.40%    passed     72.63%
+  20  B_Chlamydomonas_Alga                            26.00%    failed      0.37%
+  21  B_Chlorellaalga                                 14.40%    failed      0.00%
+  22  B_Euglena_Protist                               44.80%    passed     91.49%
+  23  B_Gloeobacter_Cyanob                            57.60%    passed     69.50%
+  24  B_Marchantia_Plant                              27.60%    passed     25.31%
+  25  B_Nicotiana_Planttabacco                        28.00%    passed     93.26%
+  26  B_Nostoc_Cyanob                                 56.40%    passed     52.35%
+  27  B_Ostreococcus_alga                             32.80%    passed     50.48%
+  28  B_Physcomitrella_PlantMoss                      26.40%    failed      0.09%
+  29  B_Prochlorothrix_Cyano                          56.40%    passed     96.69%
+  30  B_Selaginella_PlantFern                         36.00%    passed     76.37%
+  31  B_Spinacia_Plant                                28.00%    passed     98.99%
+  32  B_Synechococcus_Cyanob                          56.40%    passed     89.03%
+  33  B_Synechocystis_Cyanob                          54.80%    passed     71.15%
+  34  B_Thermosynechococcus_Cyanob                    52.80%    passed     69.07%
+  35  B_Trichodesmium_Cyanob                          55.60%    passed     90.18%
+  36  CD_Acidiphilium_AlphaP                          43.20%    passed     87.63%
+  37  CD_Burkholderia_BetaP                           43.20%    passed     57.39%
+  38  CD_Cylindrotheca_alga                           44.40%    passed     99.49%
+  39  CD_Ectocarpus_algabrown                         44.40%    passed     99.97%
+  40  CD_Emiliania_Diatom_PhytoplanktonEu             44.40%    passed     99.65%
+  41  CD_Nitrobacter_AlphaP                           43.60%    passed     93.30%
+  42  CD_Nitrosococcus_GammaP                         42.00%    passed     79.56%
+  43  CD_Nitrosospira_BetaP                           42.40%    passed     96.97%
+  44  CD_Odontella_alga                               44.40%    passed     99.39%
+  45  CD_Olisthodiscus_alga                           44.40%    passed     97.31%
+  46  CD_Paracoccus_AlphaP                            48.40%    passed     39.59%
+  47  CD_Pleurochrysis_alga                           44.40%    passed     99.60%
+  48  CD_Porphyridium_alga                            44.80%    passed     99.87%
+  49  CD_Rhodobacter_AlphaP                           48.40%    passed     53.07%
+  50  CD_Rubrivivax_BetaP                             42.40%    passed     84.97%
+  51  CD_Sinorhizobium_AlphaP                         48.40%    passed     91.16%
+WARNING: 24 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                           46.31%  4 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.008 seconds
+Measuring multi-threading efficiency up to 4 CPU cores
+Increase to 10 rounds for branch lengths
+14 trees examined
+Threads: 1 / Time: 4.208 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -12140
+Threads: 2 / Time: 2.541 sec / Speedup: 1.656 / Efficiency: 83% / LogL: -12140
+Threads: 3 / Time: 3.395 sec / Speedup: 1.240 / Efficiency: 41% / LogL: -12140
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -8774.747
+Optimal log-likelihood: -8774.709
+Proportion of invariable sites: 0.015
+Gamma shape alpha: 1.803
+Parameters optimization took 1 rounds (0.059 sec)
+Time for fast ML tree search: 0.752 seconds
+
+NOTE: ModelFinder requires 22 MB RAM!
+ModelFinder will test up to 234 protein models (sample size: 250) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            8983.299     99  18164.598    18296.598    18513.222
+  2  LG+I          8953.775     100 18107.549    18243.120    18459.696
+  3  LG+G4         8778.364     100 17756.729    17892.299    18108.875
+  4  LG+I+G4       8774.708     101 17751.415    17890.631    18107.083
+  5  LG+R2         8810.655     101 17823.311    17962.527    18178.978
+  6  LG+R3         8775.402     103 17756.805    17903.544    18119.515
+  7  LG+R4         8773.987     105 17757.975    17912.558    18127.728
+ 16  LG+F+G4       8768.259     119 17774.518    17994.210    18193.572
+ 17  LG+F+I+G4     8765.119     120 17770.238    17995.354    18192.813
+ 29  WAG+G4        8825.417     100 17850.834    17986.404    18202.980
+ 30  WAG+I+G4      8819.786     101 17841.572    17980.789    18197.240
+ 42  WAG+F+G4      8833.713     119 17905.427    18125.119    18324.480
+ 43  WAG+F+I+G4    8828.845     120 17897.691    18122.807    18320.266
+ 55  JTT+G4        8911.102     100 18022.204    18157.774    18374.350
+ 56  JTT+I+G4      8905.922     101 18013.845    18153.061    18369.512
+ 68  JTT+F+G4      8911.849     119 18061.697    18281.390    18480.751
+ 69  JTT+F+I+G4    8907.280     120 18054.560    18279.676    18477.135
+ 81  JTTDCMut+G4   8907.966     100 18015.931    18151.502    18368.078
+ 82  JTTDCMut+I+G4 8902.861     101 18007.722    18146.939    18363.390
+ 94  JTTDCMut+F+G4 8909.069     119 18056.137    18275.830    18475.191
+ 95  JTTDCMut+F+I+G4 8904.533     120 18049.065    18274.182    18471.641
+107  DCMut+G4      8974.991     100 18149.983    18285.553    18502.129
+108  DCMut+I+G4    8967.421     101 18136.842    18276.058    18492.509
+120  DCMut+F+G4    8961.932     119 18161.863    18381.556    18580.917
+121  DCMut+F+I+G4  8955.277     120 18150.553    18375.670    18573.129
+133  VT+G4         8848.778     100 17897.556    18033.127    18249.702
+134  VT+I+G4       8843.374     101 17888.749    18027.965    18244.416
+146  VT+F+G4       8848.834     119 17935.667    18155.360    18354.721
+147  VT+F+I+G4     8843.945     120 17927.890    18153.006    18350.465
+159  PMB+G4        8878.819     100 17957.637    18093.208    18309.783
+160  PMB+I+G4      8873.298     101 17948.597    18087.813    18304.264
+172  PMB+F+G4      8895.395     119 18028.790    18248.483    18447.844
+173  PMB+F+I+G4    8890.180     120 18020.360    18245.477    18442.936
+185  Blosum62+G4   8877.369     100 17954.739    18090.309    18306.885
+186  Blosum62+I+G4 8872.342     101 17946.684    18085.901    18302.352
+198  Blosum62+F+G4 8880.443     119 17998.887    18218.579    18417.941
+199  Blosum62+F+I+G4 8875.699     120 17991.399    18216.515    18413.974
+211  Dayhoff+G4    8975.182     100 18150.364    18285.934    18502.510
+212  Dayhoff+I+G4  8967.619     101 18137.238    18276.455    18492.906
+224  Dayhoff+F+G4  8962.273     119 18162.545    18382.238    18581.599
+225  Dayhoff+F+I+G4 8955.619     120 18151.237    18376.354    18573.813
+Akaike Information Criterion:           LG+I+G4
+Corrected Akaike Information Criterion: LG+I+G4
+Bayesian Information Criterion:         LG+I+G4
+Best-fit model: LG+I+G4 chosen according to BIC
+
+All model information printed to rbsc_aa_aligned.fasta.model.gz
+CPU time for ModelFinder: 36.551 seconds (0h:0m:36s)
+Wall-clock time for ModelFinder: 20.954 seconds (0h:0m:20s)
+Generating 1000 samples for ultrafast bootstrap (seed: 789475)...
+
+NOTE: 9 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.799 / Estimate: 0.000, 1.641 / LogL: -8778.300
+Init pinv, alpha: 0.010, 1.799 / Estimate: 0.014, 1.791 / LogL: -8774.711
+Init pinv, alpha: 0.020, 1.799 / Estimate: 0.016, 1.798 / LogL: -8774.710
+Init pinv, alpha: 0.031, 1.799 / Estimate: 0.015, 1.797 / LogL: -8774.709
+Init pinv, alpha: 0.041, 1.799 / Estimate: 0.016, 1.797 / LogL: -8774.711
+Init pinv, alpha: 0.051, 1.799 / Estimate: 0.016, 1.799 / LogL: -8774.713
+Init pinv, alpha: 0.061, 1.799 / Estimate: 0.016, 1.799 / LogL: -8774.715
+Init pinv, alpha: 0.072, 1.799 / Estimate: 0.016, 1.799 / LogL: -8774.717
+Init pinv, alpha: 0.082, 1.799 / Estimate: 0.016, 1.799 / LogL: -8774.719
+Init pinv, alpha: 0.092, 1.799 / Estimate: 0.016, 1.803 / LogL: -8774.720
+Optimal pinv,alpha: 0.015, 1.797 / LogL: -8774.709
+
+Parameters optimization took 1.733 sec
+Computing ML distances based on estimated model parameters... 0.457 sec
+Computing BIONJ tree...
+0.008 seconds
+Log-likelihood of BIONJ tree: -8811.370
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.130 second
+Computing log-likelihood of 98 initial trees ... 2.164 seconds
+Current best score: -8774.709
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -8774.687
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -8773.513
+Iteration 10 / LogL: -8775.564 / Time: 0h:0m:9s
+Iteration 20 / LogL: -8774.956 / Time: 0h:0m:13s
+Finish initializing candidate tree set (11)
+Current best tree score: -8773.513 / CPU time: 11.094
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -8774.819 / Time: 0h:0m:17s (0h:0m:46s left)
+Iteration 40 / LogL: -8773.675 / Time: 0h:0m:21s (0h:0m:36s left)
+Iteration 50 / LogL: -8774.438 / Time: 0h:0m:26s (0h:0m:29s left)
+Log-likelihood cutoff on original alignment: -8811.937
+Iteration 60 / LogL: -8773.608 / Time: 0h:0m:30s (0h:0m:23s left)
+Iteration 70 / LogL: -8774.435 / Time: 0h:0m:36s (0h:0m:18s left)
+Iteration 80 / LogL: -8789.056 / Time: 0h:0m:43s (0h:0m:13s left)
+Iteration 90 / LogL: -8773.617 / Time: 0h:0m:48s (0h:0m:8s left)
+Iteration 100 / LogL: -8775.897 / Time: 0h:0m:52s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -8811.937
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 106 ITERATIONS / Time: 0h:0m:55s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -8773.513
+Optimal log-likelihood: -8773.511
+Proportion of invariable sites: 0.015
+Gamma shape alpha: 1.797
+Parameters optimization took 1 rounds (0.061 sec)
+BEST SCORE FOUND : -8773.511
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.179 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file rbsc_aa_aligned.fasta.splits.nex
+Total tree length: 22.238
+
+Total number of iterations: 106
+CPU time used for tree search: 94.458 sec (0h:1m:34s)
+Wall-clock time used for tree search: 53.369 sec (0h:0m:53s)
+Total CPU time used: 99.464 sec (0h:1m:39s)
+Total wall-clock time used: 56.044 sec (0h:0m:56s)
+
+Computing bootstrap consensus tree...
+Reading input file rbsc_aa_aligned.fasta.splits.nex...
+51 taxa and 312 splits.
+Consensus tree written to rbsc_aa_aligned.fasta.contree
+Reading input trees file rbsc_aa_aligned.fasta.contree
+Log-likelihood of consensus tree: -8773.547
+
+Analysis results written to: 
+  IQ-TREE report:                rbsc_aa_aligned.fasta.iqtree
+  Maximum-likelihood tree:       rbsc_aa_aligned.fasta.treefile
+  Likelihood distances:          rbsc_aa_aligned.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          rbsc_aa_aligned.fasta.splits.nex
+  Consensus tree:                rbsc_aa_aligned.fasta.contree
+  Screen log file:               rbsc_aa_aligned.fasta.log
+
+Date and Time: Thu Jun 16 00:09:11 2022
